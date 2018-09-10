@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>2048</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/images/favicon-32x32-next.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/2048.css"/>
+  <script src="js/2048.js"></script>
+ </head>
+ <body bgcolor="gray">
+  <button><a href="https://lruihao.cn">By 李瑞豪</a></button>
+  <br><br>
+  <p>Score:<span id="score"></span></p>
+  <br>
+  <div id="gridPanel">
+  </div>
+  <!--GameOver界面-->
+  <div id="gameover">
+    <div><!--灰色半透明背景--></div>
+    <p><!--前景提示框-->
+        Game Over!<br>
+        Score:<span id="finalScore"></span><br>
+        <a class="btn" id="restart" onclick="game.start()">Try again!</a>
+    </p>
+  </div>
+ </body>
+</html>
