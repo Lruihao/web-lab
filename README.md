@@ -1,1 +1,1 @@
-**[在线查看](https://lruihao.cn/games)**
+**[在线查看](https://www.lruihao.cn/games)**
