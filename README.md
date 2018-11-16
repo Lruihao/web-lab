@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://www.lruihao.cn" target="_blank">RUI小栈</a></h1>
+<h1 align="center"><a href="https://www.lruihao.cn" target="_blank">RUI豪小栈</a></h1>
 由于不想改动以前博客的部署结构  
 所以，单独制作 https://lruihao.cn 自定义首页  
 访问https://www.lruihao.cn 查看
