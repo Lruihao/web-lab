@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="李瑞豪,RUI豪小栈,李瑞豪的个人网站" name="keywords">
+  <meta content="一个好奇有趣的网站" name="description">
+  <meta content="李瑞豪" name="author">
+  <script type="text/javascript">
+    var path = window.location.pathname;
+    //alert(path);
+    if (path=='/home/') {
+      window.location.replace("https://www.lruihao.cn");
+    }
+  </script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=0.5" />
+  <!--<meta http-equiv="refresh" content="300;url=https://lruihao.cn">-->
+  <title>RUI豪小栈</title>
+  <link rel="icon" href="https://i.loli.net/2018/08/24/5b7f6bd0ae5b6.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="games/css/button.min.css" />
+  <link rel="stylesheet" href="css/asidenav.css"/>
+  <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+  <script type="text/javascript" src="js/baidu_push.js"></script>
+  <script type="text/javascript" src="js/snowfall.jquery.js"></script>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <style type="text/css">
+    /*字体*/
+    @font-face {
+        font-family: STLT;
+        src: url("font/STLITI.TTF");
+    }
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+  
+
+</head>
+<body style="overflow: hidden;">
+<div class="cover"></div>
+<canvas class="canvas"></canvas>
+<div class="help">✌</div> 
+<div class="ui">
+  <input class="ui-input" type="text" />
+  <span class="ui-return">↵</span>
+</div>
+
+
+<div class="overlay">
+  <div class="tabs">
+    <a href="/"><div class="head">RUI豪小栈</div></a>
+    <br><br>
+    <center><font face=STLT><span id="timeDate" title="小栈已运行">载入天数...</span><span id="times" title="小栈已运行">载入时分秒...</span></font></center>
+    <br>
+    <div class="tabs-labels"><span class="tabs-label">Info</span><span class="tabs-label">Commands</span><span class="tabs-label">Share</span><span class="tabs-label">Host</span><span class="tabs-label">Reward</span><span class="tabs-label">More</span></div>
+    
+    <div class="tabs-panels">
+        
+      <div class="tabs-panel ui-details" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);">
+        <div class="ui-info-content">
+        	<font face=STLT>&emsp;&emsp;欢迎光临李瑞豪的小栈,这里是我实验性的一个小站点，显而易见地看到我会在这里分享一些有趣的姿势。您是小栈的第&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;个小伙伴！小栈一共被浏览了&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;次！您可以直接百度搜索“RUI豪小栈”找到我！</font>
+        </div>
+
+      </div>
+      
+      <ul class="tabs-panel commands">
+        <li class="commands-item" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello guys:)">Type anything</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item" style="background-image: linear-gradient(228deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item" style="background-image: linear-gradient(228deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item commands-item--gap" style="background-image: linear-gradient(228deg, #A8E6CF 0%, #FFD3B6 77%);"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|countdown 3s|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+      </ul>
+
+      <div class="tabs-panel ui-share" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);">
+        <div class="ui-share-content">
+          <p>
+            <div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="https://lruihao.cn" style="color: black;font-weight: bold;" target="_blank" title="学习记录，个人技术等"><span class="spot"></span>Blog</a>
+                </div>
+              </svg>
+            </div>
+            <div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="https://pan.lruihao.cn" style="color: black;font-weight: bold;" target="_blank" title="caddy个人云盘，大小40G,上机保存点文件绰绰有余了！"><span class="spot"></span>网盘</a>
+                </div>
+              </svg>
+            </div><br>
+          	<div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="/games" style="color: black;font-weight: bold;" target="_blank" title="回忆回忆4399的感觉"><span class="spot"></span>游戏馆</a>
+                </div>
+              </svg>
+            </div>
+            <div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="https://github.com/Lruihao/Grocery/raw/master/MMT_579767_SOAJ0.ttf" style="color: black;font-weight: bold;" title="沐目之，湘也。一款纯手写一年多的手写体字体，共6886个字"><span class="spot"></span>沐目体</a>
+                </div>
+              </svg>
+            </div>
+            <div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="http://ss.uixsj.cn/bczc_2.2.5_beta.apk" style="color: black;font-weight: bold;" title="博採眾長app,谁下谁知道！"><span class="spot"></span>博客app</a>
+                </div>
+              </svg>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+      <div class="tabs-panel ui-share" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);"">
+        <div class="ui-share-content">
+          <p>
+          	<a href="https://lruihao.cn/about" style="color: black;" target="_blank">李瑞豪</a><br>无...
+          </p>
+          <br><br><br>
+          <!--menu-->
+          <div class="aside-nav bounceInUp animated" id="aside-nav">
+            <label for="" class="aside-menu" title="按住拖动">Cell</label>
+              <a href="https://lruihao.cn" title="去博客" class="menu-item menu-first" target="_blank">Blog</a>
+              <a href="https://blog.csdn.net/qq_39520417" title="CSDN" class="menu-item menu-second" target="_blank">CSDN</a>
+              <a href="https://weibo.com/liahao" title="看微博" class="menu-item menu-third" target="_blank">Weibo</a>
+              <a href="https://github.com/Lruihao" title="github" class="menu-item menu-fourth" target="_blank">Github</a>
+              <a href="/games" title="小游戏" class="menu-item menu-five" target="_blank">Games</a>
+              <a href="https://chat.daovoice.io/?id=8a6701dd" title="在线客服" class="menu-item menu-six" target="_blank">Online</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tabs-panel ui-share" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);">
+        <div class="ui-share-content" title="谢谢老板！">
+        	<img src="images/wechatpay.gif" title="微信">&ensp;<img src="images/alipay.gif" title="支付宝">
+        </div>
+      </div>
+
+      <div class="tabs-panel ui-share" style="background-image: linear-gradient(135deg, #A8E6CF 0%, #FFD3B6 77%);">
+        <div class="ui-share-content">
+          <p>
+            <li> Alt+Z: 打开夜间模式</li><li> Alt+X: 关闭</li><li> Alt+↑: 增加亮度</li><li> Alt+↓: 降低亮度</li>
+            <br>
+          	waiting more...
+          </p>
+        </div>
+      </div>
+        
+    </div>
+    
+  </div>
+</div>	
+
+<p class="footer" align="center">Copyright<span style="font-family: none;">&nbsp;&copy;&nbsp;</span>2018 LRH . All Right Reserved.<br>
+  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254"><img src="images/gov.png" style="float:center;"/>湘公网安备 43030402000254号</a>&ensp;|&ensp;<a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备18020535号</a>
+</p>
+
+
+  <script src="js/index.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!--console.log-->
+  <script type="text/javascript">
+    console.log("\n                                                                                \n ▄▄▄▄         ██                            ██     ▄▄                           \n ▀▀██         ▀▀                            ▀▀     ██                           \n   ██       ████      ██▄████  ██    ██   ████     ██▄████▄   ▄█████▄   ▄████▄  \n   ██         ██      ██▀      ██    ██     ██     ██▀   ██   ▀ ▄▄▄██  ██▀  ▀██ \n   ██         ██      ██       ██    ██     ██     ██    ██  ▄██▀▀▀██  ██    ██ \n   ██▄▄▄   ▄▄▄██▄▄▄   ██       ██▄▄▄███  ▄▄▄██▄▄▄  ██    ██  ██▄▄▄███  ▀██▄▄██▀ \n    ▀▀▀▀   ▀▀▀▀▀▀▀▀   ▀▀        ▀▀▀▀ ▀▀  ▀▀▀▀▀▀▀▀  ▀▀    ▀▀   ▀▀▀▀ ▀▀    ▀▀▀▀   \n\n                              https://www.lruihao.cn                          \n                                                                                \n\n您好！\n欢迎进入什么都不会的李瑞豪的个人网站！\n我把更多的精力放在我的BLOG https://lruihao.cn\n也非常欢迎您来访问交流\n\n\n");
+  </script>
+
+  <script>
+    function sakuraInit() {
+        $(document).snowfall('clear');
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            $(document).snowfall({image:"images/1.png", flakeCount:5, minSpeed:1, minSize:10, maxSize:17,});
+            $(document).snowfall({image:"images/2.png", flakeCount:5, minSpeed:1, minSize:10, maxSize:17,});
+            $(document).snowfall({image:"images/3.png", flakeCount:5, minSpeed:1, minSize:10, maxSize:17,});
+            $(document).snowfall({image:"images/4.png", flakeCount:5, minSpeed:1, minSize:10, maxSize:17,});
+        } else {
+            $(document).snowfall({image:"images/1.png", flakeCount:1, minSpeed:1, minSize:15, maxSize:22,});
+            $(document).snowfall({image:"images/2.png", flakeCount:1, minSpeed:1, minSize:15, maxSize:22,});
+            $(document).snowfall({image:"images/3.png", flakeCount:1, minSpeed:1, minSize:15, maxSize:22,});
+            $(document).snowfall({image:"images/4.png", flakeCount:1, minSpeed:1, minSize:15, maxSize:22,});
+        }
+    }
+    window.onload = sakuraInit();
+  </script>
+
+  <script id="ilt" src="https://player.ilt.me/player/js/player.js" key="fbc2f1f9e2c643a8ad84b47ba3935ece"></script>
+  <!--menu-->
+  <script type="text/javascript" src="js/asidenav.js"></script>
+  <!--input-->
+  <script src="js/activate-power-mode.js"></script>
+  <script>
+  POWERMODE.colorful = true; // make power mode colorful
+  POWERMODE.shake = false; // turn off shake
+  document.body.addEventListener('input', POWERMODE);
+  </script>
+  <script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("05/28/2018 20:01:01");//此处为建站时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1100 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1100 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1100 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1100 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML =dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+    setInterval("createtime()",250);
+  </script>
+  <script>
+    var brightness;
+    //显示遮罩
+    function cover(brightness) {
+        if (typeof(div) == 'undefined') {
+            div = document.createElement('div');
+            div.setAttribute('style', 'position:fixed;top:0;left:0;outline:5000px solid;z-index:99999;');
+            document.body.appendChild(div);
+        } else {
+            div.style.display = '';
+        }
+        div.style.outlineColor = 'rgba(0,0,0,' + brightness + ')';
+    }
+    //事件监听
+    window.addEventListener('keydown', function(e) {
+        if (e.altKey && e.keyCode == 90) {
+            cover(brightness = 0.3);
+        }
+        if (e.altKey && e.keyCode == 88) {
+            cover(brightness = 0);
+        }
+        if (e.altKey && e.keyCode == 38) {
+            if (brightness - 0.05 > 0.05) cover(brightness -= 0.05);
+        }
+        if (e.altKey && e.keyCode == 40) {
+            if (brightness + 0.05 < 0.95) cover(brightness += 0.05);
+        }
+    }, false);
+  </script>
+
+</body>
+</html>
