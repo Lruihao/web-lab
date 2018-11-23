@@ -211,7 +211,8 @@
     window.onload = sakuraInit();
   </script>
 
-  <script id="ilt" src="https://player.ilt.me/player/js/player.js" key="fbc2f1f9e2c643a8ad84b47ba3935ece"></script>
+  <script type="text/javascript" src="games/js/crash_cheat.js"></script>
+  <!--<script id="ilt" src="http://pplayer.ilt.me/player/js/player.js" key="9be51ce2ab944288ae266fb6db22d1ad"></script>-->
   <!--menu-->
   <script type="text/javascript" src="js/asidenav.js"></script>
   <!--input-->
@@ -221,21 +222,22 @@
   POWERMODE.shake = false; // turn off shake
   document.body.addEventListener('input', POWERMODE);
   </script>
+  <!--time-->
   <script>
     var now = new Date(); 
     function createtime() { 
-        var grt= new Date("05/28/2018 20:01:01");//此处为建站时间 
+        var grt= new Date("05/28/2018 20:01:01");
         now.setTime(now.getTime()+250); 
-        days = (now - grt ) / 1100 / 60 / 60 / 24; dnum = Math.floor(days); 
-        hours = (now - grt ) / 1100 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1100 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
         mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-        seconds = (now - grt ) / 1100 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
         snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML =dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        document.getElementById("timeDate").innerHTML =dnum+" 天"; 
+        document.getElementById("times").innerHTML = hnum + " 时" + mnum + " 分" + snum + " 秒"; 
     } 
-    setInterval("createtime()",250);
+  setInterval("createtime()",250);
   </script>
   <script>
     var brightness;

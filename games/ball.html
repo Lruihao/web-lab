@@ -32,6 +32,19 @@
 	#gameover span { width: 60%; height: 40px; display: block; margin: 38px auto 0; text-align: center; font-size: 20px; background: #336688; color: #ffffff; border-radius: 10px; line-height: 40px; }  
 </style>
 
+  <style type="text/css">
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+
 </head>
 <body>
   <div class="svg-wrapper">
@@ -241,6 +254,12 @@
     var breakout = new Breakout(oBall, oWard, oScore, oWrap, over);  
     breakout.init();  
 
-</script>  
+</script> 
+
+  <!-- 爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="js/fireworks.js"></script>
+   
 </body>  
 </html>

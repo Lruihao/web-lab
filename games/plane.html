@@ -37,6 +37,19 @@ window.initGame=function(){
 }
 </script>
 
+	<style type="text/css">
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+
 </head>
 <body>
   <div class="svg-wrapper">
@@ -59,5 +72,10 @@ window.initGame=function(){
 
 <script type="text/javascript">window.initGame();</script>
 
+  <!-- 爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="js/fireworks.js"></script>
+  
 </body>
 </html>
