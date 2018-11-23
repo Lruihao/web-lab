@@ -1,8 +1,8 @@
 <h1 align="center"><a href="https://www.lruihao.cn" target="_blank">RUI豪小栈</a></h1>
-由于不想改动以前博客的部署结构<br>
-所以，单独制作 https://lruihao.cn 自定义首页<br>
+由于不想改动以前博客的部署结构，所以，单独制作 https://lruihao.cn 自定义首页，访问 https://www.lruihao.cn 查看<br>
 其中js来源于网络，我只是做了一些css的个性化修改及布局设计等。<br>
-访问 https://www.lruihao.cn 查看<br>
+
+---
 
 **[games](https://www.lruihao.cn/games)**
 
