@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://i.loli.net/2018/08/24/5b7f6bd0ae5b6.png" type="image/x-icon"/>
+  <title>FlappyBird</title>
+  	<link rel="stylesheet" href="css/button.min.css" />
+    <link rel="stylesheet" href="css/fly.css" media="screen" type="text/css" />
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <style type="text/css">
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+
+</head>
+
+<body>
+  <div class="svg-wrapper">
+    <svg height="40" width="150" xmlns="https://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="text">
+        <a href="/games"><span class="spot"></span>返回游戏馆</a>
+      </div>
+    </svg>
+  </div>
+<div id="wrap"></div>
+  <div id="canvasContainer"></div>
+<span id="textInputSpan">
+  输入你的名字:
+  <input id="textInput" maxlength="10" type="text" width="150" />
+  <button onclick="changeText()">GO!</button>
+</span>
+<div style="text-align:center;clear:both">
+</div>
+  <script src="js/fly.js"></script>
+
+  <!-- 爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="js/fireworks.js"></script>
+  
+</body>
+
+</html>

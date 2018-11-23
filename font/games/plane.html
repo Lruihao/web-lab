@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>飞机打字</title>
+<link rel="icon" href="https://i.loli.net/2018/08/24/5b7f6bd0ae5b6.png" type="image/x-icon"/>
+<link rel="stylesheet" href="css/button.min.css" />
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<style type="text/css">
+html,body{background-color:#25272b;background:#808080;background-position:54px 105px;background-attachment:fixed;background-repeat:no-repeat;color:#fff;font-family:helvetica,arial,sans-serif;margin:0;padding:0;font-size:12pt}
+a{color:#06c}
+img{border:0}
+
+h3{ text-align:center}
+#canvas{border:1pxsolid #555;position:absolute;left:0;top:0;width:360px;height:640px;background-color:#000}
+#game{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;width:360px;height:640px}
+#nocanvas{width:360px;margin:150px auto}
+
+#ad{width:160px;height:600px;position:absolute;left:32px;top:0;bottom:0;margin:auto}
+#overlay{position:absolute;left:0;right:0;top:0;bottom:0;background-color:#222;background-color:rgba(0,0,0,0.8);text-align:center}
+</style>
+
+
+<script type="text/javascript" src="js/ztype.js"></script>
+<script type="text/javascript">
+window.initGame=function(){
+	document.getElementById('ad').style.display='block';
+	var overlay=document.getElementById('overlay');
+	if(overlay){
+		overlay.style.display='none';
+	}
+	ig.module('start').requires('game.main').defines(function(){
+		ZType.startGame();
+	});
+	return false;
+}
+</script>
+
+	<style type="text/css">
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+
+</head>
+<body>
+  <div class="svg-wrapper">
+    <svg height="40" width="150" xmlns="https://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="text">
+        <a href="/games"><span class="spot"></span>返回游戏馆</a>
+      </div>
+    </svg>
+  </div>
+<div align="center">输入对应掉下来的字符</div>
+<div id="ad" style="display: block;"></div>
+
+<div id="game"> 
+	<canvas style="cursor: auto;" height="640" width="360" id="canvas">
+	<div id="nocanvas"> 想玩这款游戏？你需要有个不错的浏览器.</div>
+	</canvas>
+
+</div>
+
+<script type="text/javascript">window.initGame();</script>
+
+  <!-- 爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="js/fireworks.js"></script>
+  
+</body>
+</html>

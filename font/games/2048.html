@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>2048-A</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://i.loli.net/2018/08/24/5b7f6bd0ae5b6.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/2048.css"/>
+  <link rel="stylesheet" href="css/button.min.css" />
+  <script src="js/2048.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <style type="text/css">
+    /*鼠标*/
+    * {
+        cursor: url(images/default.cur),auto;
+      }
+    :active {
+        cursor: url(images/pointer.cur),auto;
+      }
+    :link {
+        cursor: url(images/pointer.cur),auto;
+      }
+  </style>
+
+ </head>
+ <body bgcolor="gray">
+  
+  <div class="svg-wrapper">
+    <svg height="40" width="150" xmlns="https://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="text">
+        <a href="/games"><span class="spot"></span>返回游戏馆</a>
+      </div>
+    </svg>
+  </div>
+  <br><br>
+  <p>Score:<span id="score"></span></p>
+  <br>
+  <div id="gridPanel">
+  </div>
+  <!--GameOver界面-->
+  <div id="gameover">
+    <div><!--灰色半透明背景--></div>
+    <p><!--前景提示框-->
+        Game Over!<br>
+        Score:<span id="finalScore"></span><br>
+        <a class="btn" id="restart" onclick="game.start()">Try again!</a>
+    </p>
+  </div> 
+
+  <!-- 爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="js/fireworks.js"></script>
+  
+ </body>
+</html>
