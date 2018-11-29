@@ -254,7 +254,13 @@ body,
 }
 
 .ui-info-content {
-  padding: 30px 40px 200px;
+  padding: 40px 40px 200px;
+  color: #333;
+}
+.ui-moods{
+  padding-bottom: 10px;
+  font-size: 80%;
+  text-align: center;
 }
 .ui-share-content {
   padding: 80px 70px;
