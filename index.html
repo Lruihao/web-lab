@@ -18,13 +18,13 @@
   <title>RUI豪小栈</title>
   <link rel="icon" href="https://i.loli.net/2018/08/24/5b7f6bd0ae5b6.png" type="image/x-icon"/>
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="https://ziyuan.lruihao.cn/css/normalize.css"/>
   <link rel="stylesheet" href="games/css/button.min.css" />
-  <link rel="stylesheet" href="css/asidenav.css"/>
+  <link rel="stylesheet" href="https://ziyuan.lruihao.cn/css/asidenav.css"/>
   <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-  <script type="text/javascript" src="js/baidu_push.js"></script>
-  <script type="text/javascript" src="js/snowfall.jquery.js"></script>
-  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <script type="text/javascript" src="games/js/baidu_push.js"></script>
+  <script type="text/javascript" src="https://ziyuan.lruihao.cn/js/snowfall.jquery.js"></script>
+  <link rel="stylesheet" href="https://ziyuan.lruihao.cn/css/style.css" media="screen" type="text/css" />
   <style type="text/css">
     /*字体*/
     @font-face {
@@ -47,7 +47,7 @@
 </head>
 <body style="overflow: hidden;">
 
-<a href="https://github.com/lruihao/rui-site" target="_blank" title="Fork me on GitHub !" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+<a href="https://github.com/lruihao/lab" target="_blank" title="Fork me on GitHub !" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
 <div class="cover"></div>
 <canvas class="canvas"></canvas>
@@ -60,7 +60,7 @@
 
 <div class="overlay">
   <div class="tabs">
-    <a href="/"><div class="head">RUI豪小栈</div></a>
+    <a href="/lab/"><div class="head">RUI豪小栈</div></a>
     <br><br>
     <center><font face=STLT><span id="timeDate" title="小栈已运行">载入天数...</span><span id="times" title="小栈已运行">载入时分秒...</span></font></center>
     <div class="ui-moods">
@@ -106,7 +106,7 @@
               <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
                 <rect id="shape" height="40" width="110" />
                 <div id="text">
-                  <a href="https://pan.lruihao.cn" style="color: black;font-weight: bold;" target="_blank" title="caddy个人云盘，大小40G,上机保存点文件绰绰有余了！"><span class="spot"></span>网盘</a>
+                  <a href="/bg" style="color: black;font-weight: bold;" target="_blank" title="效率桌面壁纸在线生成"><span class="spot"></span>效率桌面</a>
                 </div>
               </svg>
             </div><br>
@@ -122,7 +122,7 @@
               <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
                 <rect id="shape" height="40" width="110" />
                 <div id="text">
-                  <a href="https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_579767_SOAJ0.ttf" style="color: black;font-weight: bold;" title="沐目之，湘也。一款纯手写一年多的手写体字体，共6886个字"><span class="spot"></span>沐目体</a>
+                  <a href="https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf" style="color: black;font-weight: bold;" title="沐目之，湘也。一款纯手写一年多的手写体字体，共6886个字"><span class="spot"></span>沐目体</a>
                 </div>
               </svg>
             </div>
@@ -130,7 +130,15 @@
               <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
                 <rect id="shape" height="40" width="110" />
                 <div id="text">
-                  <a href="https://github.com/Lruihao/Blog_client/raw/master/bczc_2.5.5_beta.apk" style="color: black;font-weight: bold;" title="博採眾長app,谁下谁知道！"><span class="spot"></span>博客app</a>
+                  <a href="https://ziyuan.lruihao.cn/app/i%20am_2.5.9_beta.apk" style="color: black;font-weight: bold;" title="博採眾長app,谁下谁知道！"><span class="spot"></span>博客app</a>
+                </div>
+              </svg>
+            </div>
+            <div class="svg-wrapper">
+              <svg height="40" width="110" xmlns="https://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="110" />
+                <div id="text">
+                  <a href="https://github.com/Lruihao/Grocery" style="color: black;font-weight: bold;" title="就像一个杂货铺"><span class="spot"></span>更多</a>
                 </div>
               </svg>
             </div>
@@ -147,11 +155,11 @@
           <!--menu-->
           <div class="aside-nav bounceInUp animated" id="aside-nav">
             <label for="" class="aside-menu" title="按住拖动">Cell</label>
-              <a href="https://lruihao.cn" title="去博客" class="menu-item menu-first" target="_blank">Blog</a>
+              <a href="https://lruihao.cn" title="学习记录，个人技术等" class="menu-item menu-first" target="_blank">Blog</a>
               <a href="https://blog.csdn.net/qq_39520417" title="CSDN" class="menu-item menu-second" target="_blank">CSDN</a>
               <a href="https://weibo.com/liahao" title="看微博" class="menu-item menu-third" target="_blank">Weibo</a>
               <a href="https://github.com/Lruihao" title="github" class="menu-item menu-fourth" target="_blank">Github</a>
-              <a href="/games" title="小游戏" class="menu-item menu-five" target="_blank">Games</a>
+              <a href="https://pan.lruihao.cn" title="caddy个人云盘，大小40G,上机保存点文件绰绰有余了！" class="menu-item menu-five" target="_blank">Netdisk</a>
               <a href="https://chat.daovoice.io/?id=8a6701dd" title="在线客服" class="menu-item menu-six" target="_blank">Online</a>
           </div>
         </div>
@@ -178,11 +186,11 @@
   </div>
 </div>	
 
-<p class="footer" align="center">Copyright<span style="font-family: none;">&nbsp;&copy;&nbsp;</span>2018 LRH . All Right Reserved.<br>
-  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254"><img src="images/gov.png" style="float:center;"/>湘公网安备 43030402000254号</a>&ensp;|&ensp;<a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备18020535号</a>
-</p>
+<div class="footer" align="center">Copyright<span style="font-family: none;">&nbsp;&copy;&nbsp;</span>2018 LRH . All Right Reserved.<br />
+  <img src="images/gov.png" align="top" /><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254">湘公网安备 43030402000254号</a>&ensp;|&ensp;<a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备18020535号</a>
+</div>
 
-  <script src="js/index.js"></script>
+  <script src="https://ziyuan.lruihao.cn/js/index.js"></script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <!--console.log-->
   <script type="text/javascript">
@@ -221,9 +229,9 @@
   <script type="text/javascript" src="games/js/crash_cheat.js"></script>
   <!--<script id="ilt" src="http://pplayer.ilt.me/player/js/player.js" key="9be51ce2ab944288ae266fb6db22d1ad"></script>-->
   <!--menu-->
-  <script type="text/javascript" src="js/asidenav.js"></script>
+  <script type="text/javascript" src="https://ziyuan.lruihao.cn/js/asidenav.js"></script>
   <!--input-->
-  <script src="js/activate-power-mode.js"></script>
+  <script src="https://ziyuan.lruihao.cn/js/activate-power-mode.js"></script>
   <script>
   POWERMODE.colorful = true; // make power mode colorful
   POWERMODE.shake = false; // turn off shake
