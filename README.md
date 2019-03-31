@@ -13,27 +13,27 @@
 > 使用caddy搭建的filemanager,类似于ftp的多功能文件浏览器。
 
 
-**root**
-├─bg   //效率桌面
-├─csdn  //csdn访客数脚本
-├─css
-├─font
-├─games  //游戏馆
-│  ├─assets
-│  │  ├─css
-│  │  └─js
-│  ├─css
-│  ├─fonts
-│  ├─images
-│  │  └─pullbox
-│  ├─js
-│  └─planeword
-│      ├─background
-│      ├─fonts
-│      ├─music
-│      ├─sounds
-│      └─sprites
-├─images
-├─js
-├─lab  //test
-└─qqxml   //QQ卡片强制爬取
+**root**    
+├─bg   //效率桌面    
+├─csdn  //csdn访客数脚本    
+├─css    
+├─font    
+├─games  //游戏馆    
+│  ├─assets    
+│  │  ├─css    
+│  │  └─js    
+│  ├─css    
+│  ├─fonts    
+│  ├─images    
+│  │  └─pullbox    
+│  ├─js    
+│  └─planeword    
+│      ├─background    
+│      ├─fonts    
+│      ├─music    
+│      ├─sounds    
+│      └─sprites    
+├─images    
+├─js    
+├─lab  //test    
+└─qqxml   //QQ卡片强制爬取    
