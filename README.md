@@ -12,8 +12,8 @@
 
 > 使用caddy搭建的filemanager,类似于ftp的多功能文件浏览器。
 
-```
-root
+
+**root**
 ├─bg   //效率桌面
 ├─csdn  //csdn访客数脚本
 ├─css
@@ -37,4 +37,3 @@ root
 ├─js
 ├─lab  //test
 └─qqxml   //QQ卡片强制爬取
-```
