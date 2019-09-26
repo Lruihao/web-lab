@@ -1,6 +1,8 @@
 <h1 align="center"><a href="https://www.lruihao.cn" target="_blank">RUI豪小栈</a></h1>
-由于不想改动以前博客的部署结构，所以，单独制作 https://lruihao.cn 自定义首页，访问 https://www.lruihao.cn 查看<br>
-其中js来源于网络，我只是做了一些css的个性化修改及布局设计等。<br>
+> 无精力维护，加上初次接触web，代码写的太烂了，遂卒。
+
+由于不想改动以前博客的部署结构，所以，单独制作 https://lruihao.cn 自定义首页，访问 ~~www.lruihao.cn~~ 查看  
+其中js来源于网络，我只是做了一些css的个性化修改及布局设计等。  
 
 ---
 
@@ -37,4 +39,5 @@ root
 ├─js    
 ├─lab  //test    
 └─qqxml   //QQ卡片强制爬取    
+└─wxmd   //微信公众号格式化工具   
 ```
